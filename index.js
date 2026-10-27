@@ -80,7 +80,7 @@ const showcaseProjects = [
     category: 'Combat Prototype',
     title: '2D pixelated platform fighter Game',
     description: 'A fast-paced platform fighter concept designed around combo timing, movement reads, and responsive controls.',
-    image: 'project-covers/project-placeholder.svg',
+    image: 'project-covers/35-2d-pixelated-platform-fighter-game.jpg',
     link: 'https://www.behance.net/gallery/225169073/2D-pixelated-platform-fighter-Game'
   },
   {
@@ -101,14 +101,14 @@ const showcaseProjects = [
     category: 'Game Environment',
     title: 'Game environment',
     description: 'Environmental design exploration for immersive spaces, traversal patterns, and atmospheric storytelling.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/9db2ea237897133.Y3JvcCw5NzksNzY2LDE5Myww.png',
+    image: 'project-covers/39-game-environment-224913161.jpg',
     link: 'https://www.behance.net/gallery/224913161/Game-environment'
   },
   {
     category: 'Environment',
     title: 'Environment',
     description: 'A focused environment concept exploring mood, pacing, and visual hierarchy in playable spaces.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/3e6a31225988977.Y3JvcCw5MjAsNzIwLDE4MCww.jpg',
+    image: 'project-covers/40-environment-224910933.jpg',
     link: 'https://www.behance.net/gallery/224910933/Environment'
   },
   {
@@ -122,29 +122,113 @@ const showcaseProjects = [
     category: 'Unreal Engine',
     title: 'Unreal Engine 5.4 Environment',
     description: 'An Unreal Engine environment concept highlighting cinematic lighting, composition, and gameplay flow.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/e465eb225868793.Y3JvcCw5MjAsNzIwLDE4MCww.jpg',
+    image: 'project-covers/41-game-environment-224906553.jpg',
     link: 'https://www.behance.net/gallery/224906553/Game-environment'
   },
   {
     category: 'Unreal Engine',
     title: 'Unreal Engine 5 Game Environment',
     description: 'A polished UE5 environment showcase built around immersive terrain, lighting, and player direction.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/49dba0225684993.Y3JvcCw5MjAsNzIwLDE4MCww.jpg',
+    image: 'project-covers/44-unreal-engine-5-game-environment.jpg',
     link: 'https://www.behance.net/gallery/224903109/Unreal-Engine-5-Game-Environment'
   },
   {
-    category: 'VFX',
-    title: 'Game vfx',
-    description: 'Visual effects concept work focused on impact moments, spells, and feedback that reinforce gameplay feel.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/febaa5225172285.Y3JvcCw5MjAsNzIwLDE4MCww.jpg',
+    category: 'Visual Effects',
+    title: 'Game VFX',
+    description: 'A real-time green energy-beam effect showcased in a game-ready test scene.',
+    image: 'project-covers/45-game-vfx-224899465.jpg',
     link: 'https://www.behance.net/gallery/224899465/Game-vfx'
   },
   {
-    category: 'Game VFX',
-    title: 'Unreal Engine 5 Game',
-    description: 'A complete gameplay pitch concept emphasizing mechanics, progression, and visual presentation.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/0c1dea225170319.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg',
+    category: 'Visual Effects',
+    title: 'Game VFX',
+    description: 'A visual-effects showcase featuring an energy burst and a range of particle-effect setups.',
+    image: 'project-covers/46-game-vfx-224899105.jpg',
     link: 'https://www.behance.net/gallery/224899105/Game-vfx'
+  },
+  {
+    category: 'Combat Design',
+    title: 'Combat System',
+    description: 'Explore this combat-system project on Behance.',
+    image: 'project-covers/28-combat-system.jpg',
+    link: 'https://www.behance.net/gallery/255202523/Combat-system'
+  },
+  {
+    category: 'Gameplay Prototype',
+    title: 'Zombie Extraction Prototype',
+    description: 'Explore this zombie extraction prototype on Behance.',
+    image: 'project-covers/29-zombie-extraction-prototype.jpg',
+    link: 'https://www.behance.net/gallery/255202193/zombie-extraction-prototype'
+  },
+  {
+    category: 'Horror Game',
+    title: 'Horror Game',
+    description: 'Explore this horror game project on Behance.',
+    image: 'project-covers/30-horror-game.jpg',
+    link: 'https://www.behance.net/gallery/255201463/Horror-Game'
+  },
+  {
+    category: 'Environment Art',
+    title: 'UE5 Environment',
+    description: 'Explore this Unreal Engine 5 environment project on Behance.',
+    image: 'project-covers/31-ue5-environment.jpg',
+    link: 'https://www.behance.net/gallery/255201023/ue5-Environment'
+  },
+  {
+    category: 'Survival Game',
+    title: 'UE5 Survival Game',
+    description: 'Explore this Unreal Engine 5 survival game on Behance.',
+    image: 'project-covers/32-ue5-survival-game.jpg',
+    link: 'https://www.behance.net/gallery/255200511/UE5-Survival-Game'
+  },
+  {
+    category: 'Unreal Engine',
+    title: 'Unreal Engine Game',
+    description: 'Explore this Unreal Engine game project on Behance.',
+    image: 'project-covers/33-unreal-engine-game.jpg',
+    link: 'https://www.behance.net/gallery/255051675/Unreal-engine-game'
+  },
+  {
+    category: 'Simulation Game',
+    title: 'Sea Simulation Game',
+    description: 'Explore this sea simulation game project on Behance.',
+    image: 'project-covers/34-sea-simulation-game.jpg',
+    link: 'https://www.behance.net/gallery/255051071/Sea-Simulation-Game'
+  },
+  {
+    category: 'Simulation Game',
+    title: 'Office Simulation Game',
+    description: 'A workplace simulation experience built around interactive tasks and day-to-day progression.',
+    image: 'project-covers/36-office-simulation-game.jpg',
+    link: 'https://www.behance.net/gallery/255046773/Office-Simulation-Game'
+  },
+  {
+    category: 'Simulation Game',
+    title: 'Unity Simulation Game',
+    description: 'A Unity simulation project focused on interactive systems and a responsive play experience.',
+    image: 'project-covers/37-unity-simulation-game.jpg',
+    link: 'https://www.behance.net/gallery/255045995/Unity-Simulation-Game'
+  },
+  {
+    category: 'Horror Game',
+    title: 'Horror Game',
+    description: 'An atmospheric horror experience built around tension, exploration, and immersive environments.',
+    image: 'project-covers/38-horror-game-225695225.jpg',
+    link: 'https://www.behance.net/gallery/225695225/Horror-Game'
+  },
+  {
+    category: 'Environment Art',
+    title: 'Game environment',
+    description: 'A game environment study focused on atmosphere, lighting, and memorable spaces.',
+    image: 'project-covers/42-game-environment-224904865.jpg',
+    link: 'https://www.behance.net/gallery/224904865/Game-environment'
+  },
+  {
+    category: 'Unreal Engine',
+    title: 'Unreal Engine 5.4 Environment',
+    description: 'An Unreal Engine 5.4 environment project showcasing a detailed real-time world.',
+    image: 'project-covers/43-unreal-engine-54-environment.jpg',
+    link: 'https://www.behance.net/gallery/224903587/Unreal-Engine-54-Environment'
   }
 ];
 
@@ -185,7 +269,14 @@ function buildArchive() {
     title.textContent = project.title;
     const description = document.createElement('p');
     description.textContent = project.description;
-    body.append(category, title, description);
+    const projectAction = document.createElement('span');
+    projectAction.className = 'showcase-cta';
+    projectAction.append('Play / View Project ');
+    const projectActionIcon = document.createElement('span');
+    projectActionIcon.setAttribute('aria-hidden', 'true');
+    projectActionIcon.textContent = '↗';
+    projectAction.append(projectActionIcon);
+    body.append(category, title, description, projectAction);
     card.append(imageWrap, body);
     link.append(card);
     fragment.append(link);
