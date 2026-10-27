@@ -298,6 +298,15 @@ document.addEventListener('keydown', (event) => {
 
 const contactForm = document.getElementById('contact-form');
 const contactStatus = document.getElementById('contact-status');
+const contactPackage = document.getElementById('contact-package');
+
+document.querySelectorAll('.pricing-button[data-package]').forEach((button) => {
+  button.addEventListener('click', () => {
+    if (contactPackage instanceof HTMLSelectElement) {
+      contactPackage.value = button.dataset.package || '';
+    }
+  });
+});
 
 contactForm?.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -306,14 +315,16 @@ contactForm?.addEventListener('submit', (event) => {
   const formData = new FormData(contactForm);
   const name = String(formData.get('name') || '').trim();
   const email = String(formData.get('email') || '').trim();
+  const packageName = String(formData.get('package') || '').trim();
   const message = String(formData.get('message') || '').trim();
-  const subject = `Project inquiry from ${name}`;
-  const body = `Name: ${name}\nEmail: ${email}\n\nProject details:\n${message}`;
+  const requirements = String(formData.get('requirements') || '').trim();
+  const subject = `Project inquiry - ${packageName} package`;
+  const body = `Name: ${name}\nEmail: ${email}\nSelected package: ${packageName}\n\nProject details:\n${message}\n\nAdditional requirements:\n${requirements || 'None provided'}`;
   const mailto = `mailto:ojdeveloper75@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   if (contactStatus) {
     contactStatus.dataset.state = 'success';
-    contactStatus.textContent = 'Your email app should open with your message ready. Review it and press Send to submit.';
+    contactStatus.textContent = 'Your email app should open with your inquiry ready. Review it and press Send to submit; no payment is taken here.';
   }
   window.location.href = mailto;
 });

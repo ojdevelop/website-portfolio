@@ -262,6 +262,28 @@ img, video { display: block; max-width: 100%; }
 .service-cta:hover { color: var(--accent); }
 .service-cta:hover span { transform: translate(2px, -2px); }
 
+.pricing-section { padding: clamp(86px, 11vw, 148px) 0; border-top: 1px solid var(--line); }
+.pricing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 16px; margin-top: 48px; }
+.pricing-card { position: relative; display: flex; flex-direction: column; min-width: 0; padding: 28px 25px; border: 1px solid var(--line); background: linear-gradient(155deg, rgba(255, 255, 255, 0.035), transparent 42%), #0d0f12; }
+.pricing-card-featured { border-color: rgba(140, 230, 208, 0.72); background: linear-gradient(155deg, rgba(140, 230, 208, 0.1), transparent 45%), #101512; }
+.pricing-badge { position: absolute; top: 0; right: 0; margin: 0; padding: 7px 11px; background: var(--accent); color: #08100e; font-size: 0.62rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+.pricing-tier { margin: 0 0 10px; color: var(--accent); font-size: 0.7rem; font-weight: 750; letter-spacing: 0.12em; text-transform: uppercase; }
+.pricing-card h3 { max-width: 280px; margin: 0; font-size: 1.35rem; line-height: 1.2; letter-spacing: -0.035em; }
+.pricing-description { min-height: 52px; margin: 10px 0 0; color: var(--muted); font-size: 0.82rem; line-height: 1.6; }
+.pricing-amount { margin: 20px 0 19px; font-size: clamp(2.5rem, 4vw, 3.2rem); font-weight: 750; letter-spacing: -0.07em; line-height: 1; }
+.pricing-amount > span { margin-right: 3px; color: var(--accent); font-size: 0.58em; vertical-align: 0.35em; }
+.pricing-amount small { display: block; margin-top: 8px; color: #858a88; font-size: 0.68rem; font-weight: 500; letter-spacing: 0; }
+.pricing-features { display: grid; gap: 12px; margin: 0 0 26px; padding: 20px 0 0; border-top: 1px solid var(--line); list-style: none; }
+.pricing-features li { position: relative; padding-left: 21px; color: #c8cdca; font-size: 0.78rem; line-height: 1.5; }
+.pricing-features li::before { position: absolute; top: 0.45em; left: 3px; width: 8px; height: 4px; transform: rotate(-45deg); border-bottom: 1.5px solid var(--accent); border-left: 1.5px solid var(--accent); content: ""; }
+.pricing-button { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; margin-top: auto; padding: 0 14px; border: 1px solid var(--line); color: var(--text); font-size: 0.8rem; font-weight: 700; transition: background 180ms ease, border-color 180ms ease, color 180ms ease; }
+.pricing-button span { color: var(--accent); }
+.pricing-button:hover { border-color: var(--accent); background: rgba(140, 230, 208, 0.08); }
+.pricing-card-featured .pricing-button { border-color: var(--accent); background: var(--accent); color: #08100e; }
+.pricing-card-featured .pricing-button span { color: #08100e; }
+.pricing-card-featured .pricing-button:hover { background: #b0f3e3; }
+.pricing-note { max-width: 790px; margin: 22px 0 0; color: #858a88; font-size: 0.74rem; line-height: 1.65; }
+
 .contact-section { padding-top: clamp(75px, 10vw, 135px); padding-bottom: clamp(80px, 10vw, 130px); border-top: 1px solid var(--line); }
 .contact-top { max-width: 740px; }
 .contact-top h2 { margin: 26px 0 17px; font-size: clamp(3.2rem, 7vw, 6.3rem); }
@@ -270,9 +292,11 @@ img, video { display: block; max-width: 100%; }
 .contact-form { display: grid; gap: 22px; }
 .form-row { display: grid; gap: 8px; }
 .form-row label { color: #dfe2df; font-size: 0.77rem; font-weight: 600; }
-.form-row input, .form-row textarea { width: 100%; padding: 12px 13px; border: 1px solid var(--line); border-radius: 0; outline: none; background: #0e1013; color: var(--text); font-size: 0.9rem; resize: vertical; transition: border-color 160ms ease; }
-.form-row input:focus, .form-row textarea:focus { border-color: var(--accent); }
+.form-row input, .form-row textarea, .form-row select { width: 100%; padding: 12px 13px; border: 1px solid var(--line); border-radius: 0; outline: none; background: #0e1013; color: var(--text); font-size: 0.9rem; transition: border-color 160ms ease; }
+.form-row textarea { resize: vertical; }
+.form-row input:focus, .form-row textarea:focus, .form-row select:focus { border-color: var(--accent); }
 .form-row input::placeholder, .form-row textarea::placeholder { color: #666c69; }
+.form-row label span { color: #858a88; font-weight: 400; }
 .contact-form .primary-btn { justify-self: start; }
 .form-note { max-width: 520px; margin: -12px 0 0; color: #828885; font-size: 0.73rem; }
 .form-note[data-state="error"] { color: #ff9f91; }
@@ -332,6 +356,8 @@ img, video { display: block; max-width: 100%; }
   .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .about-section { gap: 55px; }
   .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pricing-card:last-child { grid-column: 1 / -1; width: min(100%, 520px); justify-self: center; }
 }
 
 @media (max-width: 650px) {
@@ -373,6 +399,11 @@ img, video { display: block; max-width: 100%; }
   .service-grid { grid-template-columns: 1fr; margin-top: 38px; }
   .service-card { min-height: 185px; }
   .service-card h3 { margin-top: 24px; }
+  .pricing-section { padding: 78px 0; }
+  .pricing-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 34px; }
+  .pricing-card, .pricing-card:last-child { grid-column: auto; width: auto; padding: 25px 21px; }
+  .pricing-description { min-height: 0; }
+  .pricing-amount { font-size: 2.8rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 40px; margin-top: 38px; }
   .contact-top h2 { font-size: clamp(3.1rem, 13vw, 5rem); }
   .site-footer { grid-template-columns: 1fr auto; gap: 12px; }
@@ -383,9 +414,9 @@ img, video { display: block; max-width: 100%; }
   .modal-dialog { max-height: 94vh; padding: 25px 17px; }
   .modal-close { top: 12px; right: 12px; width: 38px; height: 38px; }
   .showcase-grid { grid-template-columns: 1fr; }
-  .showcase-card-link { display: grid; grid-template-columns: 115px 1fr; }
-  .showcase-thumb { height: 100%; aspect-ratio: auto; }
-  .showcase-body { align-self: center; padding: 12px; }
+  .showcase-card-link { display: block; }
+  .showcase-thumb { height: auto; aspect-ratio: 1.5; }
+  .showcase-body { padding: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
