@@ -320,13 +320,18 @@ contactForm?.addEventListener('submit', (event) => {
   const requirements = String(formData.get('requirements') || '').trim();
   const subject = `Project inquiry - ${packageName} package`;
   const body = `Name: ${name}\nEmail: ${email}\nSelected package: ${packageName}\n\nProject details:\n${message}\n\nAdditional requirements:\n${requirements || 'None provided'}`;
-  const mailto = `mailto:ojdevelop75@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmailComposeUrl = new URL('https://mail.google.com/mail/');
+  gmailComposeUrl.searchParams.set('view', 'cm');
+  gmailComposeUrl.searchParams.set('fs', '1');
+  gmailComposeUrl.searchParams.set('to', 'ojdevelop75@gmail.com');
+  gmailComposeUrl.searchParams.set('su', subject);
+  gmailComposeUrl.searchParams.set('body', body);
 
   if (contactStatus) {
     contactStatus.dataset.state = 'success';
-    contactStatus.textContent = 'Your email app should open with your inquiry ready. Review it and press Send to submit; no payment is taken here.';
+    contactStatus.textContent = 'A Gmail draft should open with your inquiry ready. Review it and press Send to submit; no payment is taken here.';
   }
-  window.location.href = mailto;
+  window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
 });
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
