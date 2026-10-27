@@ -320,7 +320,7 @@ contactForm?.addEventListener('submit', (event) => {
   const requirements = String(formData.get('requirements') || '').trim();
   const subject = `Project inquiry - ${packageName} package`;
   const body = `Name: ${name}\nEmail: ${email}\nSelected package: ${packageName}\n\nProject details:\n${message}\n\nAdditional requirements:\n${requirements || 'None provided'}`;
-  const mailto = `mailto:ojdeveloper75@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailto = `mailto:ojdevelop75@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   if (contactStatus) {
     contactStatus.dataset.state = 'success';
