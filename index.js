@@ -112,13 +112,6 @@ const showcaseProjects = [
     link: 'https://www.behance.net/gallery/224910933/Environment'
   },
   {
-    category: 'MMO Environment',
-    title: 'MMO Game environment',
-    description: 'Large-scale environment design concept built around social spaces, traversal, and world readability.',
-    image: 'https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/761d28225869661.Y3JvcCw5MjAsNzIwLDE4Miww.jpg',
-    link: 'https://www.behance.net/gallery/224908821/MMO-Game-environment'
-  },
-  {
     category: 'Unreal Engine',
     title: 'Unreal Engine 5.4 Environment',
     description: 'An Unreal Engine environment concept highlighting cinematic lighting, composition, and gameplay flow.',
