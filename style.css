@@ -357,7 +357,7 @@ img, video { display: block; max-width: 100%; }
   .about-section { gap: 55px; }
   .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .pricing-card:last-child { grid-column: 1 / -1; width: min(100%, 520px); justify-self: center; }
+  .pricing-card:last-child { grid-column: 1 / -1; width: calc((100% - 16px) / 2); justify-self: center; }
 }
 
 @media (max-width: 650px) {
